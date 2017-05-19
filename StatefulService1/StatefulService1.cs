@@ -11,7 +11,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 namespace StatefulService1
 {
     /// <summary>
-    /// An instance of this class is created for each service replica by the Service Fabric runtime.
+    /// An instance of this class is created for each service replica by the Service Fabric runtime. 
     /// </summary>
     internal sealed class StatefulService1 : StatefulService
     {
