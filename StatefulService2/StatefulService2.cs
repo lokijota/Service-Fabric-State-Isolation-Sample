@@ -8,14 +8,14 @@ using Microsoft.ServiceFabric.Data.Collections;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
 
-namespace StatefulService1
+namespace StatefulService2
 {
     /// <summary>
     /// An instance of this class is created for each service replica by the Service Fabric runtime.
     /// </summary>
-    internal sealed class StatefulService1 : StatefulService
+    internal sealed class StatefulService2 : StatefulService
     {
-        public StatefulService1(StatefulServiceContext context)
+        public StatefulService2(StatefulServiceContext context)
             : base(context)
         { }
 
@@ -51,10 +51,10 @@ namespace StatefulService1
                 {
                     var result = await myDictionary.TryGetValueAsync(tx, "Counter");
 
-                    ServiceEventSource.Current.ServiceMessage(this.Context, "SS1 - Current Counter Value: {0}",
-                        result.HasValue ? result.Value.ToString() : "SS1 - Value does not exist.");
+                    ServiceEventSource.Current.ServiceMessage(this.Context, "SS2 - Current Counter Value: {0}",
+                        result.HasValue ? result.Value.ToString() : "SS2 - Value does not exist.");
 
-                    await myDictionary.AddOrUpdateAsync(tx, "Counter", 1000, (key, value) => ++value);
+                    await myDictionary.AddOrUpdateAsync(tx, "Counter", 0, (key, value) => ++value);
 
                     // If an exception is thrown before calling CommitAsync, the transaction aborts, all changes are 
                     // discarded, and nothing is saved to the secondary replicas.

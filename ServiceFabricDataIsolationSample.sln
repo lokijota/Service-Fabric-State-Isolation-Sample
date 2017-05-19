@@ -7,6 +7,8 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ServiceFabricDataIsolationS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatefulService1", "StatefulService1\StatefulService1.csproj", "{C8D6AE6F-9E41-4EAA-A625-6893FEED677D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatefulService2", "StatefulService2\StatefulService2.csproj", "{7EEE1AA8-6137-46F0-A6F1-CB43F59D0B4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,6 +25,10 @@ Global
 		{C8D6AE6F-9E41-4EAA-A625-6893FEED677D}.Debug|x64.Build.0 = Debug|x64
 		{C8D6AE6F-9E41-4EAA-A625-6893FEED677D}.Release|x64.ActiveCfg = Release|x64
 		{C8D6AE6F-9E41-4EAA-A625-6893FEED677D}.Release|x64.Build.0 = Release|x64
+		{7EEE1AA8-6137-46F0-A6F1-CB43F59D0B4F}.Debug|x64.ActiveCfg = Debug|x64
+		{7EEE1AA8-6137-46F0-A6F1-CB43F59D0B4F}.Debug|x64.Build.0 = Debug|x64
+		{7EEE1AA8-6137-46F0-A6F1-CB43F59D0B4F}.Release|x64.ActiveCfg = Release|x64
+		{7EEE1AA8-6137-46F0-A6F1-CB43F59D0B4F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
